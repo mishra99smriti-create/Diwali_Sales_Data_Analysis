@@ -1,0 +1,26 @@
+# Core data analysis
+pandas>=1.5
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.13
+jupyter>=1.0
+
+# Excel / file IO
+openpyxl>=3.1
+xlrd>=2.0
+
+# Optional: geospatial / maps (may require system deps like GDAL)
+geopandas>=0.13
+folium>=0.14
+
+# Analysis / modeling
+scikit-learn>=1.2
+statsmodels>=0.14
+
+# Utilities
+python-dateutil
+tqdm
+
+# For saving figures
+kaleido
