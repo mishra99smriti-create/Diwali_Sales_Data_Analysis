@@ -44,32 +44,32 @@ jupyter notebook "Diwali_Sales_Data_analysis.ipynb"
 Use the following flowchart to understand the data-analysis pipeline:
 
 ```mermaid
-graph TD
-  A[Load Data (CSV/Excel)] --> B[Explore Data (EDA)]
-  B --> C[Clean Data (missing, types, duplicates)]
-  C --> D[Feature Engineering]
-  D --> E[Analysis & Visualizations]
-  E --> F[Insights & Summary]
-  C --> G{Need Aggregation?}
-  G -- Yes --> H[Aggregate by Category/Region/Date]
-  H --> D
-  G -- No --> D
+graph TD;
+A["Load Data (CSV/Excel)"] --> B["Explore Data (EDA)"]
+B --> C["Clean Data (missing, types, duplicates)"]
+C --> D["Feature Engineering"]
+D --> E["Analysis & Visualizations"]
+E --> F["Insights & Summary"]
+C --> G{"Need Aggregation?"}
+G -- Yes --> H["Aggregate by Category/Region/Date"]
+H --> D
+G -- No --> D
 ```
 
 ## Key visual outputs
 The notebook produces the following visualizations:
 
 ```mermaid
-graph LR
-  A[Time Series: Sales Trend] --> B[Monthly/Weekly Patterns]
-  A --> C[Seasonality & Peaks]
-  D[Category Breakdown] --> E[Top Products]
-  D --> F[Category Revenue Share]
-  G[Geographic Analysis] --> H[Region-wise Sales Map]
-  I[Correlation & Pivot Tables] --> J[Heatmaps & Tables]
-  B --- D
-  C --- G
-  J --- E
+graph LR;
+A["Time Series: Sales Trend"] --> B["Monthly/Weekly Patterns"]
+A --> C["Seasonality & Peaks"]
+D["Category Breakdown"] --> E["Top Products"]
+D --> F["Category Revenue Share"]
+G["Geographic Analysis"] --> H["Region-wise Sales Map"]
+I["Correlation & Pivot Tables"] --> J["Heatmaps & Tables"]
+B --- D
+C --- G
+J --- E
 ```
 
 ## Files
@@ -79,12 +79,5 @@ graph LR
 ## Next steps & suggestions
 - Execute the notebook to generate the plotted outputs and export key figures as PNGs.
 - Add a `requirements.txt` listing packages used (pandas, numpy, matplotlib, seaborn, plotly, geopandas if maps are used).
-- Save key figures into an `images/` folder and reference them from this README for a richer presentation.
-
 ---
 
-If you want, I can now:
-- run the notebook to produce the charts and save image files, or
-- generate SVG/PNG versions of the flowchart diagrams and place them in an `images/` folder.
-
-Which would you prefer next?
